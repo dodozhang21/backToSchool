@@ -6,7 +6,7 @@ version 1.0.0 - Hello world!
 
 --------------------------------------------------------------------------------
 For support, 
-visit http://pure-essence.net/2013/04/26/child-theme-for-twenty-twelve-back-to-school
+visit http://pure-essence.net/2013/05/01/child-theme-for-twenty-twelve-back-to-school
 
 
 --------------------------------------------------------------------------------
