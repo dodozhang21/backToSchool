@@ -9,21 +9,13 @@
 if ( ! function_exists( 'backToSchool_setup' ) ):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which runs
- * before the init hook. The init hook is too late for some features, such as indicating
- * support post thumbnails.
- *
- * @since backToSchool 1.0.0
+ * @since backToSchool 2.0.0
  */
 function backToSchool_setup() {
-	/*
-	add_theme_support('custom-header', array (
-	        // Header image default
-	       'default-image'			=> get_stylesheet_directory_uri() . '/images/default-logo.png'));*/
+   remove_theme_support('custom-background');
 }
 endif; // backToSchool_setup
-add_action( 'after_setup_theme', 'backToSchool_setup' );
+add_action( 'after_setup_theme', 'backToSchool_setup',11 );
 
 
 /**
@@ -35,4 +27,8 @@ function backToSchool_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'backToSchool_scripts' );
-?>
+
+/**
+ * @since 2.0.0
+ */
+add_theme_support( 'title-tag' );

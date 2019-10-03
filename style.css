@@ -1,14 +1,15 @@
 /*
 Theme Name: Back to School
-Theme URI: http://pure-essence.net/2013/05/01/child-theme-for-twenty-twelve-back-to-school
+Theme URI: https://pure-essence.net/2013/05/01/child-theme-for-twenty-twelve-back-to-school
 Author: Ying Zhang
 Author URI: http://regretless.com/
 Description: Back to School builds off of Twenty Twelve, so you get all of the goodness of a WordPress core theme included.
-Version: 1.0.0
-Tags: light, pink, orange, green, purple, two-column, right-sidebar, flexible-width, threaded-comments, sticky-post, post-formats
+Version: 2.0.0
+Tags:  right-sidebar, threaded-comments, sticky-post, post-formats
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-template: twentytwelve
+Template: twentytwelve
+Text Domain:  twentytwelve
 */
 
 @import url('../twentytwelve/style.css');
@@ -26,7 +27,7 @@ html body.custom-font-enabled {
     background-repeat: repeat;
     background-position: left top;
     padding: 0;
-	color: #888;
+/*	color: #888;*/
 	font-family: "Roboto Condensed","Open Sans",Helvetica,Arial,sans-serif;
 }
 
@@ -70,29 +71,30 @@ html body.custom-font-enabled {
 }
 
 h1.site-title {
-	height: 66px;
-	background-image: url(images/header.png);
-	background-position: 200px bottom;
-	background-repeat: no-repeat;
-	padding: 50px 0 0 245px;
+	padding: 30px 0 0 0; 
 	font-family: "Bigelow Rules";
 	font-size: 3.5em;
 	line-height: 50px;
+	text-align: center; 
+	max-width: 550px;
+	margin: auto;
 }
 
 h1.site-title a {
-	color: #7CB118;
+	color: #4e4e4e;
 }
 h1.site-title a:hover {
 	color: #AED839;
 }
 
 h2.site-description {
+        text-align: center; 
 	font-family: "Arial Rounded MT", "Noto Sans";
-	padding-left: 245px;
-	color: #65A5A5;
+	color: #4e4e4e;
 	font-weight: 500;
 	font-size: 1.1em;
+        max-width: 550px;
+	margin: auto;
 }
 
 #site-navigation {
@@ -121,16 +123,9 @@ h2.site-description {
 	margin-top: 0;
 	text-align: center;
 }
-article.sticky .featured-post {
-	border: 0;
-	background: url(images/appleBooks.png) right top no-repeat;
-	text-align: right;
-	padding-right: 100px;
-	color: #8B5C29;
-	font-family: "Arial Rounded MT","Noto Sans";
-	text-shadow: 1px 1px 0 #E7F7F7;
-	float: right;
-	text-transform: uppercase;
+article.sticky  {
+	background: url(images/appleBooks.png)  right top  no-repeat ;
+	
 }
 .entry-header .entry-title {
 	clear: none;
